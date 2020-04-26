@@ -12,7 +12,7 @@ from my_oke.dataloader import TrainDataLoader, TestDataLoader
 
 # dataloader for training
 train_dataloader = TrainDataLoader(
-	in_path = "./benchmarks/FB15K237/", 
+	in_path = "./benchmarks/YAGO3-10/", 
 	nbatches = 100,
 	threads = 8, 
 	sampling_mode = "normal", 
@@ -22,7 +22,7 @@ train_dataloader = TrainDataLoader(
 	neg_rel = 0)
 
 # dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/FB15K237/", "link")
+test_dataloader = TestDataLoader("./benchmarks/YAGO3-10/", "link")
 
 # define the model
 transh = TransH(
